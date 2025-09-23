@@ -1,0 +1,150 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  color: #2563eb;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* Sections */
+/* CHANGE THIS RULE */
+section {
+  padding: 30px 20px;
+  max-width: 700px;
+  margin: 10px auto; /* Reduced from 20px to 10px */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  color: #666;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+}
+/* Make sections taller so scrolling is noticeable */
+section {
+  min-height: 400px; /* or 500px */
+}
+
+/* Project Cards */
+.project {
+  background: #fefefe;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.project a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Contact Section */
+#contact {
+  background-color: #fff;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+#contact a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+
+  /* Reduce padding in sections */
+  section {
+    padding: 30px 15px;
+  }
+
+  /* Stack nav links vertically */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 8px 0;
+  }
+
+  /* Project cards full width */
+  .project {
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  /* Footer padding */
+  footer {
+    padding: 15px;
+  }
+}
